@@ -1,0 +1,32 @@
+<div class="content" >
+
+    <h2>ระบบจัดสต๊อก</h2>
+    <div class="form-group">
+        <div class="row">
+            <mat-form-field class="example-form-field">
+                <mat-label>ชื่อผู้ใช้งาน</mat-label>
+                <input matInput type="text" [(ngModel)]="username">
+                <button mat-button *ngIf="username" matSuffix mat-icon-button aria-label="Clear" (click)="username=''">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+       <div class="row">
+        <mat-form-field class="example-form-field">
+            <mat-label>รหัสผ่าน</mat-label>
+            <input matInput type="text" [(ngModel)]="password" type="password">
+            <button mat-button *ngIf="password" matSuffix mat-icon-button aria-label="Clear" (click)="password=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+       </div>
+       <div class="row center">
+        <button mat-raised-button color="primary" (click)="onSubmit()" >เข้าสู่ระบบ</button>
+       </div>
+
+   
+    </div>
+
+
+
+</div>
