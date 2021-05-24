@@ -16,20 +16,22 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import {MatTableModule} from '@angular/material/table'
+import {MatPaginatorModule} from '@angular/material/paginator'
 //component
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
-import { ProductComponent } from './product/product.component'
+import { ProductComponent } from './product/product.component';
+import { ImportProductComponent } from './dialog/import-product/import-product.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,    
-    DashboardComponent, PageNotFoundComponent, LoginComponent, MenuComponent, OrderComponent, ProductComponent
+    DashboardComponent, PageNotFoundComponent, LoginComponent, MenuComponent, OrderComponent, ProductComponent, ImportProductComponent
   ],
   imports: [
     BrowserModule,
@@ -42,10 +44,10 @@ import { ProductComponent } from './product/product.component'
     MatDialogModule,
     MatProgressSpinnerModule,
     MatMenuModule,
-    MatToolbarModule
-    // RouterModule.forRoot([
-    //   {path: '', component: DashboardComponent}
-    // ]),
+    MatToolbarModule,
+    MatTableModule,
+    MatPaginatorModule
+   
     
   ],
   providers: [],
